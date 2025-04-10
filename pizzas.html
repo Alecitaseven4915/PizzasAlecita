@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleccionar Productos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script scr= "https://cdnjs.cloudfare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <h1>Selecciona tus productos</h1>
+    <form id="pizzas-form">
+        <label>Nombre: <input type="text" id="nombre" required></label>
+        <label>Fecha: <input type="date" id="fecha" required></label>
+
+        <h3>Pizzas</h3>
+       <label for="pizza1">Pizza 1:</label>
+<select id="pizza1">
+    <option value="0">Selecciona una</option>
+    <option value="100">Peperoni - $100</option>
+    <option value="120">Hawaiana - $120</option>
+    <option value="130">Mexicana - $130</option>
+</select>
+
+<label for="pizza2">Pizza 2:</label>
+<select id="pizza2">
+    <option value="0">Selecciona una</option>
+    <option value="100">Peperoni - $100</option>
+    <option value="120">Hawaiana - $120</option>
+    <option value="130">Mexicana - $130</option>
+</select>
+
+<label for="pizza3">Pizza 3:</label>
+<select id="pizza3">
+    <option value="0">Selecciona una</option>
+    <option value="100">Peperoni - $100</option>
+    <option value="120">Hawaiana - $120</option>
+    <option value="130">Mexicana - $130</option>
+</select>
+
+<h3>Complementos</h3>
+<label><input type="checkbox" class="complemento" value="3" data-nombre="Orilla"> Orilla ($3)</label><br>
+<label><input type="checkbox" class="complemento" value="5" data-nombre="Queso Extra"> Queso Extra ($5)</label><br>
+<label><input type="checkbox" class="complemento" value="20" data-nombre="Refresco"> Refresco ($20)</label><br>
+<label><input type="checkbox" class="complemento" value="30" data-nombre="Papas"> Papas ($30)</label><br>
+
+<h3>Método de entrega</h3>
+<label><input type="radio" name="entrega" value="0" data-nombre="Para llevar" checked> Para llevar (Gratis)</label><br>
+<label><input type="radio" name="entrega" value="30" data-nombre="A domicilio"> A domicilio ($30)</label><br>
+
+<button id="calcular-total">Calcular Total</button>
+<p id="total"></p>
+</form> <!-- Cierre del formulario aquí -->
+
+<!-- Botón fuera del formulario -->
+<button id="siguiente-pago" class="hidden">Siguiente</button>
+
+<script src="script.js"></script>
+</body>
+</html>
+</body>
+</html>
