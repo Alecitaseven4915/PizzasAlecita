@@ -216,38 +216,24 @@ h1, h2 {
   }
 }
 
-@media (max-width: 768px) {
-  header {
-    padding: 10px 5%;
-    flex-direction: column;
-    align-items: flex-start;
-  }
+@media (max-width: 600px) {
+  header {
+    padding: 10px 15px;
+  }
 
-  .logo img {
-    width: 100px;
-  }
+  header img {
+    max-height: 40px; 
+  }
 
-  nav ul {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-  }
+  nav ul {
+    font-size: 16px; 
+  }
 
-  .hero-image img {
-    width: 250px;
-    height: 250px;
-  }
+  .menu {
+    padding: 10px;
+  }
 
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
-  .btn-primary {
-    font-size: 0.9rem;
-    padding: 12px 24px;
-  }
+  h1 {
+    font-size: 20px; 
+  }
 }
