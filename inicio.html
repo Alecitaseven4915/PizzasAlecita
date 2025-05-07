@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Online</title>
+  <link rel="stylesheet" href="inicio.css">
+  <link rel="stylesheet" href="mensaje.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="https://sfx-events.com/wp-content/uploads/2023/05/rauwalejandro-logo-300x138.png" alt="El Zorro Logo">
+  </div>
+  <nav>
+    <ul>
+      <li><a href="menu.html">Inicio</a></li>
+      <li><a href="inicio.html">Tienda</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="redes.html">Redes</a></li>
+      <li><a href="discografia.html">Discografía</a></li>
+    </ul>
+  </nav>
+</header>
+
+<h1>Categorías</h1>
+<div class="categories">
+  <a href="ropa.html" class="category-link">
+    <div class="category">
+      <div class="category-overlay">Ropa</div>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6X9Mj8L5SniEULxLLcLIPnnQSzTPTE0CCMSS7mhvc9a5ZoEKo7aa-Tjs&s=10" alt="Ropa">
+    </div>
+  </a>
+  <a href="cuadros.html" class="category-link">
+    <div class="category">
+      <div class="category-overlay">Cuadros</div>
+      <img src="cuadros.jpg" alt="Cuadros">
+    </div>
+  </a>
+  <a href="accesorios.html" class="category-link">
+    <div class="category">
+      <div class="category-overlay">Accesorios</div>
+      <img src="Objetos.jpg" alt="Accesorios">
+    </div>
+  </a>
+</div>
+
+<div class="trends">
+  <h2>Tendencias</h2>
+  <div id="toast-container"></div>
+  <div class="trend-list">
+
+    <div class="trend-item">
+      <img src="https://lamerch.pe/cdn/shop/files/Rauw_Alejandro_-_Cosa_Nuestra_Vinilo_2_LP_1200x.jpg?v=1741720574" alt="Producto 1">
+      <div class="trend-info">
+        <p>Vinil Rauw Alejandro Cosa Nuestra</p>
+        <div class="trend-price">$300 MX</div>
+        <button class="add-to-cart"><i class="fas fa-rocket"></i> Agregar al Carrito</button>
+      </div>
+    </div>
+
+    <div class="trend-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRudHaviXtWXJMJQs1Y1CmuZDneLZB8XiXohQULx38qaRn59cAEgQbUH04&s=10" alt="Producto 2">
+      <div class="trend-info">
+        <p>Crocss Blancas Rauw Alejandro Saturno</p>
+        <div class="trend-price">$1500 MX</div>
+        <button class="add-to-cart">Añadir al carrito</button>
+      </div>
+    </div>
+
+    <div class="trend-item">
+      <img src="Lentes.jpg" alt="Producto 3">
+      <div class="trend-info">
+        <p>Lentes Rauw Alejandro Blancos</p>
+        <div class="trend-price">$150 MX</div>
+        <button class="add-to-cart">Añadir al carrito</button>
+      </div>
+    </div>
+
+    <div class="trend-item">
+      <img src="Rr.jpg" alt="Producto 4">
+      <div class="trend-info">
+        <p>Vinil Álbum RR Rauw Alejandro</p>
+        <div class="trend-price">$340 MX</div>
+        <button class="add-to-cart">Añadir al carrito</button>
+      </div>
+    </div>
+
+    <div class="trend-item">
+      <img src="Fundas.jpg" alt="Producto 5">
+      <div class="trend-info">
+        <p>Fundas Rauw Alejandro ¡Phone 13</p>
+        <div class="trend-price">$238 MX</div>
+        <button class="add-to-cart">Añadir al carrito</button>
+      </div>
+    </div>
+
+    <div class="trend-item">
+      <img src="saturno.jpg" alt="Producto 6">
+      <div class="trend-info">
+        <p>Marco Rauw Alejandro Saturno</p>
+        <div class="trend-price">$250 MX</div>
+        <button class="add-to-cart">Añadir al carrito</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="finalizar-compra">
+  <a href="formulario.html">
+    <button id="btn-carrito" class="btn-carrito">Finalizar compra (0)</button>
+  </a>
+</div>
+
+
+<script src="carrito.js"></script>
+<script src="formulario.js"></script>
+
+</body>
+</html>
