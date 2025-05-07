@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Formulario de Compra</title>
+  <link rel="stylesheet" href="formulario.css" />
+</head>
+<body>
+  <h1>Compra Espacial - Saturno</h1>
+
+  <form id="formularioCompra">
+
+    <div id="resumen-carrito">
+      <h2>Resumen del Carrito</h2>
+      <ul id="lista-productos"></ul>
+      <div id="total">
+        <strong>Total: $<span id="total-pagar">0</span></strong>
+      </div>
+    </div>
+
+    <label for="pais">País:</label>
+    <input type="text" id="pais" required />
+
+    <label for="nombre">Nombre Completo:</label>
+    <input type="text" id="nombre" required />
+
+    <label for="cp">Código Postal:</label>
+    <input type="text" id="cp" maxlength="5" pattern="^\d{5}$" required />
+
+    <label for="estado">Estado:</label>
+    <input type="text" id="estado" required />
+
+    <label for="municipio">Municipio:</label>
+    <input type="text" id="municipio" required />
+
+    <label for="distrito">Distrito:</label>
+    <input type="text" id="distrito" required />
+
+    <label for="direccion">Dirección:</label>
+    <input type="text" id="direccion" required />
+    
+    <label for="notas">Notas para el repartidor:</label>
+    <textarea id="notas" rows="3"></textarea>
+
+    <label for="num">Número de teléfono:</label>
+    <input type="text" id="num" maxlength="10" required />
+
+    <label for="correo">Correo Electrónico:</label>
+    <input type="email" id="correo" required />
+
+    <label for="tarjeta">Número de tarjeta:</label>
+    <input type="text" id="tarjeta" maxlength="16" required />
+
+    <label for="fechaExp">Fecha de expiración:</label>
+    <input type="month" id="fechaExp" required />
+
+    <label for="cvv">CVV:</label>
+    <input type="text" id="cvv" maxlength="3" required />
+
+    <label for="saldo">Saldo de la Tarjeta:</label>
+    <input type="text" id="saldo" readonly />
+    
+    <label>
+      <input type="checkbox" id="terminos" required />
+      Acepto los términos y condiciones
+    </label>
+
+    <br><br>
+    <button type="submit">Generar Ticket</button>
+  </form>
+<script src="formulario.js"></script>
+
+</body>
+</html>

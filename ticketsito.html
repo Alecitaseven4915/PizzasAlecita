@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ticket de Compra</title>
+  <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+  <div class="ticket-container">
+    <h1>Ticket de Compra</h1>
+
+    <div class="ticket-details">
+      <p><strong>País:</strong> <span id="ticket-pais"></span></p>
+      <p><strong>Nombre Completo:</strong> <span id="ticket-nombre"></span></p>
+      <p><strong>Código Postal:</strong> <span id="ticket-cp"></span></p>
+      <p><strong>Estado:</strong> <span id="ticket-estado"></span></p>
+      <p><strong>Municipio:</strong> <span id="ticket-municipio"></span></p>
+      <p><strong>Distrito:</strong> <span id="ticket-distrito"></span></p>
+      <p><strong>Dirección:</strong> <span id="ticket-direccion"></span></p>
+      <p><strong>Notas para el repartidor:</strong> <span id="ticket-notas"></span></p>
+      <p><strong>Número de Teléfono:</strong> <span id="ticket-telefono"></span></p>
+      <p><strong>Correo Electrónico:</strong> <span id="ticket-correo"></span></p>
+      <p><strong>Número de Tarjeta:</strong> <span id="ticket-tarjeta"></span></p>
+      <p><strong>Fecha de Expiración:</strong> <span id="ticket-fecha-exp"></span></p>
+      <p><strong>CVV:</strong> <span id="ticket-cvv"></span></p>
+    </div>
+
+      <p><strong>Saldo de la Tarjeta:</strong> <span id="ticket-saldo"></span></p>
+      <p><strong>Saldo Restante:</strong> <span id="ticket-saldo-restante"></span></p>
+    </div>
+
+    <div class="ticket-products">
+      <h3>Productos Comprados:</h3>
+      <ul id="productosCarrito"></ul>
+      <p><strong>Total pagado:</strong> $<span id="total-pagar"></span></p>
+    </div>
+
+    <div class="ticket-footer">
+      <p>Gracias por tu compra!</p>
+    </div>
+  </div>
+<button onclick="generatePDF()">Descargar Ticket PDF</button>
+<script src="jspdf.umd.min.js"></script>
+<script src="pdf.js"></script>
+ <script src="ticketsito.js"></script>
+</body>
+</html>
