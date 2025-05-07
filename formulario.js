@@ -66,7 +66,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Función auxiliar para generar número de tarjeta aleatorio
   function generarNumeroTarjeta() {
     let numero = '';
     for (let i = 0; i < 16; i++) {
