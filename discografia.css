@@ -1,0 +1,264 @@
+@font-face {
+    font-family: 'MiFuente3';
+    src: url('fonts/Co1.otf') format('opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MiFuente7';
+    src: url('fonts/Lemon.otf') format('opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  font-family: 'MiFuente7', sans-serif;
+  background: url('Rarauw.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+header {
+  width: 100%;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  font-family: 'MiFuente3', sans-serif;
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 120px;
+  height: auto;
+  border: none;
+  box-shadow: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  background: linear-gradient(45deg, #fbfcff, #ced9f5, #b8734c, #e0ad5e, #eeac5f, #232227);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+nav ul li a:hover {
+  background: linear-gradient(45deg, #304782, #fafbff, #3a60ac, #ced9f5, #d4d7e6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+#carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+  position: relative;
+}
+
+/* Cada slide */
+#carousel > div {
+  min-width: 100%;
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; 
+}
+
+#carousel > div > h2 {
+  font-family: 'MiFuente7', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 1000;
+  color: white;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 0 0 15px #000;
+  margin-bottom: 1rem;
+  user-select: none;
+  text-align: center;
+  width: 100%;
+}
+
+
+.album-info img,
+.flex.items-start.justify-center.space-x-8 img {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 0 25px #0ff;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.album-info img:hover,
+.flex.items-start.justify-center.space-x-8 img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 35px #0ff, 0 0 45px #00ffff;
+}
+
+.tracklist {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px); 
+  background-color: rgba(255, 255, 255, 0.15); 
+  width: 80%;            
+  max-width: 1200px;     
+  margin: 30px auto;  
+  padding: 20px 40px;    
+  border-radius: 15px;   
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); 
+  color: #fff;          
+  font-family: 'MiFuente3', sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button {
+  background: #f5deb3;
+  border: none;
+  color: #000;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.3rem 0.8rem;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #fff;
+  transition: background 0.3s ease;
+  user-select: none;
+  z-index: 10;
+}
+
+button:hover {
+  background: #ffcc70;
+  color: #000;
+}
+
+
+@keyframes pulseTrapCake1 {
+  0%, 100% {
+    box-shadow: 0 0 15px #444444, 0 0 25px #ffd180, 0 0 35px #ff00ff;
+  }
+  50% {
+    box-shadow: 0 0 25px #ff007f, 0 0 40px #00eaff, 0 0 60px #ff007f;
+  }
+}
+
+@keyframes pulseAfrodisiaco {
+  0%, 100% {
+    box-shadow: 0 0 15px #3e1f0d, 0 0 25px #ffcc70, 0 0 35px #b8860b;
+  }
+  50% {
+    box-shadow: 0 0 25px #ffd700, 0 0 40px #0a0a0a, 0 0 60px #1c1c1c;
+  }
+}
+
+@keyframes pulseViceversa {
+  0%, 100% {
+    box-shadow: 0 0 15px #ffe5f1, 0 0 25px #ff6f61, 0 0 35px #1f1f1f;
+  }
+  50% {
+    box-shadow: 0 0 25px #9b4dff, 0 0 40px #ffb6c1, 0 0 60px #f5f5f5;
+  }
+}
+
+@keyframes pulseTrapCake2 {
+  0%, 100% {
+    box-shadow: 0 0 15px #ff00ff, 0 0 25px #00d9ff, 0 0 35px #ffffff;
+  }
+  50% {
+    box-shadow: 0 0 25px #021c36, 0 0 40px #ffea00, 0 0 60px #ffea00;
+  }
+}
+
+@keyframes pulseSaturno {
+  0%, 100% {
+    box-shadow: 0 0 15px #8a2be2, 0 0 25px #00ffff, 0 0 35px #4b0082;
+  }
+  50% {
+    box-shadow: 0 0 25px #00ffff, 0 0 40px #8a2be2, 0 0 60px #4b0082;
+  }
+}
+
+@keyframes pulsePlayaSaturno {
+  0%, 100% {
+    box-shadow: 0 0 15px #4b5320, 0 0 25px #3a5f0b, 0 0 35px #f5deb3;
+  }
+  50% {
+    box-shadow: 0 0 25px #2f2f2f, 0 0 40px #a9a9a9, 0 0 60px #c0c0c0;
+  }
+}
+
+@keyframes pulseCosaNuestra {
+  0%, 100% {
+    box-shadow: 0 0 15px #000000, 0 0 25px #ffd700, 0 0 35px #f7e04b;
+  }
+  50% {
+    box-shadow: 0 0 25px #ffec8b, 0 0 40px #daa520, 0 0 60px #1a1a1a;
+  }
+}
+
+/* Asignar animación según atributo alt */
+
+img[alt="TrapCake1"] {
+  animation-name: pulseTrapCake1;
+}
+
+img[alt="Afrodisíaco"] {
+  animation-name: pulseAfrodisiaco;
+}
+
+img[alt="Viceversa"] {
+  animation-name: pulseViceversa;
+}
+
+img[alt="TrapCake2"] {
+  animation-name: pulseTrapCake2;
+}
+
+img[alt="Saturno"] {
+  animation-name: pulseSaturno;
+}
+
+img[alt="PlayaSaturno"] {
+  animation-name: pulsePlayaSaturno;
+}
+
+img[alt="CosaNuestra"] {
+  animation-name: pulseCosaNuestra;
+}
